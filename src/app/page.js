@@ -1,22 +1,20 @@
 import Cover from "@/components/cover";
 
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="">
       <Cover />
-      <div className="bg-gray-400 w-full h-60 flex flex-col justify-center items-center max-w-8/10 ml-auto mr-auto rounded-2xl">
+      <div className="mr-auto ml-auto flex h-60 w-full max-w-8/10 flex-col items-center justify-center rounded-2xl bg-gray-400">
         <h2>Trust Signal</h2>
         <ul className="flex flex-wrap">
           <li> Company1 LOGO</li>
           <li> Company2 LOGO</li>
           <li> Company3 LOGO</li>
-          <li> Company4 LOGO</li>
         </ul>
       </div>
-      <div className="bg-gray-400 w-full min-h-60 flex flex-col justify-center gap-6 max-w-8/10 ml-auto mr-auto rounded-2xl">
+      <div className="mr-auto ml-auto flex min-h-60 w-full max-w-8/10 flex-col justify-center gap-6 rounded-2xl bg-gray-400">
         <h2>What We do.</h2>
         <p>
           Tired of [Common Client Pain Point: clunky software, slow websites]?
@@ -65,9 +63,11 @@ export default function Home() {
         <h2>
           <b>Ready to Build Your Solution?</b>
         </h2>
-        <h3>Let's discuss your project. No obligation, just a conversation.</h3>
+        <h3>
+          Let&apos;s discuss your project. No obligation, just a conversation.
+        </h3>
         <Link href="/about">Schedule your free site inspection.</Link>
-        <Link href="/">Let's start from scratch.</Link>
+        <Link href="/">Let&apos;s start from scratch.</Link>
       </div>
     </div>
   );

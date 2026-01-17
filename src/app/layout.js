@@ -1,6 +1,6 @@
 import "./globals.css";
-import Navbar from "@/components/navigation";
-// import NavigationBar from "@/components/navigation-bar";
+import Navigation from "@/components/navigation";
+
 export const metadata = {
   title: "Business brewery",
   description:
@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <Navigation />
         {children}
       </body>
     </html>
