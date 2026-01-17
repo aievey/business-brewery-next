@@ -13,10 +13,11 @@ const navItems = [
       { label: "About Us", href: "/about" },
       { label: "Customer Stories", href: "/about/#" },
       { label: "Process", href: "/how-it-works" },
+      { label: "Package", href: "/package" },
     ],
   },
   {
-    label: "Services",
+    label: "Terms",
 
     dropdown: [
       { label: "Terms of Services", href: "/legal" },
