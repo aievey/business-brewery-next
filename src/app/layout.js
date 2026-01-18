@@ -13,7 +13,7 @@ export const metadata = {
     siteName: "My Website",
     images: [
       {
-        url: "https://business-brewery-next.vercel.app/business-brewery-cover-main.avif", // Best to point to an actual image file
+        url: "https://business-brewery-next.vercel.app", // Best to point to an actual image file
         width: 1200,
         height: 630,
         alt: "Business Brewery OG",
