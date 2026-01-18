@@ -3,14 +3,15 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 
 export const metadata = {
-  title: "Business brewery",
+  title: "Business Brewery",
   description:
     "Update/ Renew or even create from Scratch your business profile online with us!",
   openGraph: {
-    title: "My Website Title",
-    description: "My website description",
+    title: "Business Brewery",
+    description:
+      "Update/ Renew or even create from Scratch your business profile online with us!",
     url: "https://business-brewery-next.vercel.app/",
-    siteName: "My Website",
+    siteName: "Business Brewery",
     images: [
       {
         url: "https://business-brewery-next.vercel.app", // Best to point to an actual image file
