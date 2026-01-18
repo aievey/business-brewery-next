@@ -2,10 +2,10 @@ import { LayoutList } from "lucide-react";
 
 const Legal = () => {
   return (
-    <div className="mr-auto ml-auto flex w-12/13 flex-col items-center space-y-10 md:w-8/10">
+    <div className="mr-auto ml-auto flex w-12/13 flex-col items-center space-y-4 md:w-8/10 md:space-y-10">
       <div className="h-60 w-full rounded-2xl bg-blue-200"></div>
-      <div className="w-full rounded-2xl border border-amber-600 md:w-8/10">
-        <div className="space-y-5 p-5 text-stone-600 md:px-10">
+      <div className="w-full rounded-2xl border border-stone-700 shadow md:w-8/10">
+        <div className="space-y-4 p-4 text-stone-600 md:px-10">
           <h1 className="text-xl font-bold tracking-wider">
             TERMS AND CONDITIONS.
           </h1>
