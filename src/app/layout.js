@@ -14,7 +14,7 @@ export const metadata = {
     siteName: "Business Brewery",
     images: [
       {
-        url: "https://business-brewery-next.vercel.app", // Best to point to an actual image file
+        url: "https://business-brewery-next.vercel.app/opengraph-image.png", // Best to point to an actual image file
         width: 1200,
         height: 630,
         alt: "Business Brewery OG",
