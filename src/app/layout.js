@@ -5,7 +5,7 @@ import Footer from "@/components/footer";
 export const metadata = {
   title: "Business brewery",
   description:
-    "Update/ Renew/ or even create from Scratch your business profile online with us!",
+    "Update/ Renew or even create from Scratch your business profile online with us!",
   openGraph: {
     title: "My Website Title",
     description: "My website description",
