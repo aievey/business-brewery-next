@@ -1,4 +1,9 @@
 import { LayoutList } from "lucide-react";
+export const metadata = {
+  title: "Termsof Services",
+  description:
+    "These Terms and Conditions govern your access to and use of the website development, software solutions, and related services provided by Business Brewery",
+};
 
 const Legal = () => {
   return (
