@@ -5,7 +5,7 @@ const Footer = () => {
   const currentDate = new Date().getFullYear();
   return (
     <>
-      <footer className="mt-4 mr-auto ml-auto min-h-50 w-12/13 rounded-2xl bg-stone-800 p-4 md:mt-10 md:p-6">
+      <footer className="mt-4 mr-auto ml-auto min-h-50 w-12/13 max-w-427 rounded-2xl bg-stone-800 p-4 md:mt-10 md:p-6">
         <div className="flex items-center justify-center">
           <div className="flex flex-wrap justify-center gap-4 p-4 text-stone-50 md:h-full md:min-w-6/9 md:flex-nowrap">
             {/* Footer hero */}

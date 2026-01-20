@@ -1,21 +1,16 @@
 import Cover from "@/components/cover";
 import Link from "next/link";
-import Button from "@/components/ui/button";
 import PageContainer from "@/components/ui/page-container";
+import Display from "@/components/ui/logo-container";
 
 export default function Home() {
   return (
     <div className="">
-      <Cover />
+      <div className="mb-15 flex justify-center md:mb-8">
+        <Cover />
+      </div>
       <PageContainer>
-        <div className="mr-auto ml-auto flex h-60 w-full max-w-8/10 flex-col items-center justify-center rounded-2xl bg-gray-400">
-          <h2>Trust Signal</h2>
-          <ul className="flex flex-wrap">
-            <li> Company1 LOGO</li>
-            <li> Company2 LOGO</li>
-            <li> Company3 LOGO</li>
-          </ul>
-        </div>
+        <Display />
         <div className="mr-auto ml-auto flex min-h-60 w-full max-w-8/10 flex-col justify-center gap-6 rounded-2xl bg-gray-400">
           <h2>What We do.</h2>
           <p>

@@ -1,4 +1,9 @@
+import Display from "@/components/ui/logo-container";
 const Support = () => {
-  return <h1>Support</h1>;
+  return (
+    <div>
+      <Display />
+    </div>
+  );
 };
 export default Support;

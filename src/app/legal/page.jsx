@@ -212,7 +212,7 @@ const Legal = () => {
           <div className="ml-4">
             <p>
               11.1. Governing Law: These Terms shall be governed by the laws of
-              <b>Dehradun/ Uttarakhand India</b>.
+              <b> Dehradun, India</b>.
             </p>
             <p>
               11.2. Entire Agreement: These Terms, together with any Project
@@ -235,7 +235,9 @@ const Legal = () => {
           </p>
           <p className="text-blue-500">
             <b>
-              <a href="mailto:amitabh293verma@gmail.com">Send email</a>
+              <a href="mailto:amitabh293verma@gmail.com">
+                amitabh293verma@gmail.com
+              </a>
             </b>
           </p>
           <p>
