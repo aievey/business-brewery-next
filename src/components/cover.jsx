@@ -35,7 +35,7 @@ export default function Cover() {
         <div className="text-l absolute -bottom-15 left-1/2 z-10 flex h-1/11 w-full -translate-x-1/2 transform items-center justify-center rounded-2xl bg-stone-800/80 py-10 text-stone-50 shadow backdrop-blur-[5px] xl:-bottom-8 xl:w-1/2 xl:p-0">
           <p className="px-5 text-center font-light tracking-wider">
             We take care of your exposure so{" "}
-            <span className="font-bold text-amber-600">
+            <span className="font-bold text-amber-400">
               you can focus on your business 100%.
             </span>
           </p>

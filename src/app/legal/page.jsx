@@ -1,4 +1,5 @@
-import { LayoutList } from "lucide-react";
+import SubCover from "@/components/ui/sub-cover";
+import PageContainer from "@/components/ui/page-container";
 export const metadata = {
   title: "Termsof Services",
   description:
@@ -7,8 +8,8 @@ export const metadata = {
 
 const Legal = () => {
   return (
-    <div className="mr-auto ml-auto flex w-12/13 flex-col items-center space-y-4 md:w-8/10 md:space-y-10">
-      <div className="h-60 w-full rounded-2xl bg-blue-200"></div>
+    <PageContainer>
+      <SubCover url="/terms-cover.jpg">Terms</SubCover>
       <div className="w-full rounded-2xl border border-stone-700 shadow md:w-8/10">
         <div className="space-y-4 p-4 text-stone-600 md:px-10">
           <h1 className="text-xl font-bold tracking-wider">
@@ -242,7 +243,7 @@ const Legal = () => {
           </p>
         </div>
       </div>
-    </div>
+    </PageContainer>
   );
 };
 export default Legal;

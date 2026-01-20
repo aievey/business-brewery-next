@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Button from "./ui/button";
 const Footer = () => {
   const currentDate = new Date().getFullYear();
   return (
@@ -25,9 +26,7 @@ const Footer = () => {
                 <b>Update</b> / <b>Renew</b> or even create from <b>Scratch</b>{" "}
                 your business profile online <b>with us!</b>
               </p>
-              <button className="w-1/2 rounded-2xl bg-amber-600 p-1 px-3 font-bold tracking-wider">
-                Start now
-              </button>
+              <Button width="w-1/2">Start now</Button>
             </div>
             {/* Middle */}
             <div className="flex w-full flex-col gap-4 md:w-1/3">

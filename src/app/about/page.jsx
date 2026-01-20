@@ -1,11 +1,15 @@
+import Cover from "@/components/cover";
+import PageContainer from "@/components/ui/page-container";
+import SubCover from "@/components/ui/sub-cover";
+
 export const metadata = {
   title: "About us",
   description: "Who are we? What we do? Know about us.",
 };
 const About = () => {
   return (
-    <div>
-      Cover{" "}
+    <PageContainer>
+      <SubCover url="/about-us-cover.jpg">About us</SubCover>
       <ul>
         <li>
           <b>Headline: </b>More Than Code: Building Partnerships for Digital
@@ -69,7 +73,7 @@ const About = () => {
           <button>Services</button>
         </li>
       </ul>
-    </div>
+    </PageContainer>
   );
 };
 export default About;
