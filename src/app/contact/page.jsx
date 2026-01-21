@@ -1,5 +1,5 @@
-import PageContainer from "@/components/ui/page-container";
-import SubCover from "@/components/ui/sub-cover";
+import PageContainer from "@/components/page-container";
+import SubCover from "@/components/sub-cover";
 
 export const metadata = {
   title: "Contact",

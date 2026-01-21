@@ -42,20 +42,20 @@ const logos = [
   },
   {
     id: 9,
-    name: "HTML",
+    name: "GitHub",
     url: "https://cdn.worldvectorlogo.com/logos/github-icon.svg",
   },
 ];
 const Display = () => {
   return (
-    <div className="flex w-full flex-wrap items-center justify-center gap-4 py-6 md:gap-10 md:py-20">
+    <div className="flex w-full flex-wrap items-center justify-center gap-4 py-10 md:gap-10 md:py-20">
       {logos.map((logo) => (
         <div key={logo.id} className="relative size-14 md:min-h-32 md:min-w-32">
           <Image
             src={logo.url}
             fill
             className="object-contain"
-            alt={`business brewery ${logo.name} skill`}
+            alt={`business brewery ${logo.name} expert`}
           />
         </div>
       ))}

@@ -1,4 +1,4 @@
-import Display from "@/components/ui/logo-container";
+import Display from "@/components/index-components/brand-logo-container";
 const Support = () => {
   return (
     <div>

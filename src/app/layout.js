@@ -1,6 +1,6 @@
 import "./globals.css";
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
+import Navigation from "@/components/root-layout/navigation";
+import Footer from "@/components/root-layout/footer";
 
 export const metadata = {
   title: "Business Brewery",

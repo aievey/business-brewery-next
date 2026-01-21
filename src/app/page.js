@@ -1,7 +1,11 @@
-import Cover from "@/components/cover";
+import Cover from "@/components/index-components/cover";
+import Services from "@/components/index-components/services";
+
 import Link from "next/link";
-import PageContainer from "@/components/ui/page-container";
-import Display from "@/components/ui/logo-container";
+import PageContainer from "@/components/page-container";
+import Display from "@/components/index-components/brand-logo-container";
+import { Segment, Large, Small } from "@/components/ui/segment";
+import Process from "@/components/index-components/process";
 
 export default function Home() {
   return (
@@ -10,62 +14,49 @@ export default function Home() {
         <Cover />
       </div>
       <PageContainer>
+        {/* Brand Logos */}
         <Display />
-        <div className="mr-auto ml-auto flex min-h-60 w-full max-w-8/10 flex-col justify-center gap-6 rounded-2xl bg-gray-400">
-          <h2>What We do.</h2>
-          <p>
-            Tired of [Common Client Pain Point: clunky software, slow websites]?
-          </p>
-          <ul className="">
-            <li> Icon/Graphic for each.</li>
-            <li> Service Title: Custom Web Development</li>
-            <li>
-              {" "}
-              Brief Benefit: Scalable, secure websites built for growth and
-              performance.
-            </li>
-            <li>
-              {" "}
-              Link: Learn More links to a dedicated service page or case study.
-            </li>
-          </ul>
-        </div>
-        <ul>
-          <li>
-            <b>The Results We Deliver</b>
-          </li>
-          <li>
+        <Services />
+
+        <Segment>
+          <Small>The Results We Deliver</Small>
+          <Large>
             Project Image/Screenshot. Client Name & Project Type: E-Commerce
             Platform for Brand X <br />
             Brief Challenge & Solution: 1-2 sentences. <br />
             Key Result/Outcome: Result: 75% faster load time, 30% more sales.{" "}
             <br />
             CTA: "View Full Case Study"
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <b>A Clear, Collaborative Process</b>
-          </li>
-          <li>
-            Discover: Strategy & Planning Design: UX/UI Mockups <br />
-            Develop: Build & Test <br />
-            Deliver: Launch & Support
-          </li>
-        </ul>
-        <h2>
-          <b>About me</b>
-        </h2>
-        <div>
-          <h2>
-            <b>Ready to Build Your Solution?</b>
-          </h2>
-          <h3>
-            Let&apos;s discuss your project. No obligation, just a conversation.
-          </h3>
-          <Link href="/about">Schedule your free site inspection.</Link>
-          <Link href="/">Let&apos;s start from scratch.</Link>
-        </div>
+          </Large>
+        </Segment>
+        <Process />
+
+        <Segment>
+          <Small>
+            <h2>
+              <b>About me</b>
+            </h2>
+          </Small>
+          <Large>ok</Large>
+        </Segment>
+
+        <Segment>
+          <Small>Ready to Build Your Solution?</Small>
+          <Large>
+            <p>
+              Let&apos;s discuss your project. No obligation, just a
+              conversation.{" "}
+              <Link href="/about" className="text-blue-500">
+                Schedule your free site inspection
+              </Link>{" "}
+              or
+              <Link href="/" className="text-blue-500">
+                {" "}
+                let&apos;s start from scratch.
+              </Link>
+            </p>
+          </Large>
+        </Segment>
       </PageContainer>
     </div>
   );
