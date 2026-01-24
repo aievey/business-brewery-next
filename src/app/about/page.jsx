@@ -1,5 +1,8 @@
 import PageContainer from "@/components/page-container";
 import SubCover from "@/components/sub-cover";
+import SubForm from "@/components/sub-form";
+import Image from "next/image";
+import Button from "@/components/ui/button";
 import {
   Segment,
   Large,
@@ -13,6 +16,7 @@ export const metadata = {
   description: "Who are we? What we do? Know about us.",
 };
 const About = () => {
+  const newLocal = "rounded-2xl bg-amber-400 p-4 shadow";
   return (
     <PageContainer>
       <SubCover url="/about-us-cover.jpg">About us</SubCover>
@@ -30,22 +34,30 @@ const About = () => {
         <Large>
           <Head>How we work</Head>
           <Elaboration>
-            <ul className="ml-4 space-y-4">
-              <li>
-                <b>Partnership Over Transaction:</b> <br />
-                We see ourselves as an extension of your team.
+            <ul className="space-y-4">
+              <li className={newLocal}>
+                <b>Partnership Over Transaction.</b> <br />
+                <span className="italic">
+                  We see ourselves as an extension of your team.
+                </span>
               </li>
-              <li>
-                <b>Clarity & Communication:</b> <br />
-                No jargon, just clear updates and honest timelines.
+              <li className="rounded-2xl bg-amber-400 p-4 shadow">
+                <b>Clarity & Communication.</b> <br />
+                <span className="italic">
+                  No jargon, just clear updates and honest timelines.
+                </span>
               </li>
-              <li>
-                <b>Future-Proof Solutions:</b> <br />
-                We build for tomorrow, not just for today.
+              <li className="rounded-2xl bg-amber-400 p-4 shadow">
+                <b>Future-Proof Solutions.</b> <br />
+                <span className="italic">
+                  We build for tomorrow, not just for today.
+                </span>
               </li>
-              <li>
-                <b>Quality in the Details:</b> <br />
-                From code to customer experience, we sweat the small stuff.
+              <li className="rounded-2xl bg-amber-400 p-4 shadow">
+                <b>Quality in the Details.</b> <br />
+                <span className="italic">
+                  From code to customer experience, we sweat the small stuff.
+                </span>
               </li>
             </ul>
           </Elaboration>
@@ -67,7 +79,7 @@ const About = () => {
           </div>
         </Large>
         <Small>
-          <Head>What makes us diffeent?</Head>
+          <Head>What makes us different?</Head>
           <Elaboration>
             We Focus on Your Business Goals, not just technical specs.
             <br /> You Work Directly With the Experts, not an account manager.{" "}
@@ -81,12 +93,19 @@ const About = () => {
         <b>component required</b> <br />
         Testimonials
       </div>
-
-      <b>Have a project in mind?</b>
-      <br />
-      <h2>Let&apos;s combine your vision with our expertise</h2>
-      <button>Speak to us</button>
-      <button>Services</button>
+      <Segment>
+        <Large>
+          <div className="flex h-full w-full flex-col items-center justify-center">
+            <Head>Have a project in mind?</Head>
+            <Elaboration>
+              Let&apos;s combine your vision with our expertise
+            </Elaboration>
+          </div>
+        </Large>
+        <Small>
+          <SubForm />
+        </Small>
+      </Segment>
     </PageContainer>
   );
 };

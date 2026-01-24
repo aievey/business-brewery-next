@@ -50,7 +50,7 @@ const Display = () => {
   return (
     <div className="flex w-full flex-wrap items-center justify-center gap-4 py-10 md:gap-10 md:py-20">
       {logos.map((logo) => (
-        <div key={logo.id} className="relative size-14 md:min-h-32 md:min-w-32">
+        <div key={logo.id} className="relative size-14 md:min-h-24 md:min-w-24">
           <Image
             src={logo.url}
             fill

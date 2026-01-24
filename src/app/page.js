@@ -4,7 +4,14 @@ import Services from "@/components/index-components/services";
 import Link from "next/link";
 import PageContainer from "@/components/page-container";
 import Display from "@/components/index-components/brand-logo-container";
-import { Segment, Large, Small } from "@/components/ui/segment";
+import SubForm from "@/components/sub-form";
+import {
+  Head,
+  Segment,
+  Large,
+  Small,
+  Elaboration,
+} from "@/components/ui/segment";
 import Process from "@/components/index-components/process";
 
 export default function Home() {
@@ -19,14 +26,18 @@ export default function Home() {
         <Services />
 
         <Segment>
-          <Small>The Results We Deliver</Small>
+          <Small>
+            <Head>The Results We Deliver</Head>
+          </Small>
           <Large>
-            Project Image/Screenshot. Client Name & Project Type: E-Commerce
-            Platform for Brand X <br />
-            Brief Challenge & Solution: 1-2 sentences. <br />
-            Key Result/Outcome: Result: 75% faster load time, 30% more sales.{" "}
-            <br />
-            CTA: "View Full Case Study"
+            <Elaboration>
+              Project Image/Screenshot. Client Name & Project Type: E-Commerce
+              Platform for Brand X <br />
+              Brief Challenge & Solution: 1-2 sentences. <br />
+              Key Result/Outcome: Result: 75% faster load time, 30% more sales.{" "}
+              <br />
+              CTA: "View Full Case Study"
+            </Elaboration>
           </Large>
         </Segment>
         <Process />
@@ -41,21 +52,28 @@ export default function Home() {
         </Segment>
 
         <Segment>
-          <Small>Ready to Build Your Solution?</Small>
           <Large>
-            <p>
-              Let&apos;s discuss your project. No obligation, just a
-              conversation.{" "}
-              <Link href="/about" className="text-blue-500">
-                Schedule your free site inspection
-              </Link>{" "}
-              or
-              <Link href="/" className="text-blue-500">
-                {" "}
-                let&apos;s start from scratch.
-              </Link>
-            </p>
+            <div className="flex h-full flex-col items-center justify-center">
+              <Head>Ready to Build Your Solution?</Head>
+              <Elaboration>
+                <p>
+                  Let&apos;s discuss your project. No obligation, just a
+                  conversation.{" "}
+                  <Link href="/about" className="text-blue-500">
+                    Schedule your free site inspection
+                  </Link>{" "}
+                  or
+                  <Link href="/" className="text-blue-500">
+                    {" "}
+                    let&apos;s start from scratch.
+                  </Link>
+                </p>
+              </Elaboration>
+            </div>
           </Large>
+          <Small>
+            <SubForm />
+          </Small>
         </Segment>
       </PageContainer>
     </div>

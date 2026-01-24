@@ -12,6 +12,7 @@ import {
   Timer,
   Search,
 } from "lucide-react";
+import Button from "../ui/button";
 
 const servicesList = [
   {
@@ -73,6 +74,12 @@ const Services = () => {
           bleding edge technology to outshine your competition! <br />
           Growth and performance that is what we deliver.
         </Elaboration>
+        <div className="flex items-center justify-start gap-6 pt-6">
+          <Button width="w-35" accent>
+            Learn more
+          </Button>
+          <Button width="w-35">Get started</Button>
+        </div>
       </Large>
     </Segment>
   );

@@ -11,7 +11,7 @@ export default function Cover() {
                 Business Brewery
               </h2>
               <p className="text-sm font-extralight">
-                -ready to take your business to the next levl?
+                -ready to take your business to the next level?
               </p>
             </div>
           </div>
