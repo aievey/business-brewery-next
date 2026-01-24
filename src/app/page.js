@@ -4,7 +4,7 @@ import Services from "@/components/index-components/services";
 import Link from "next/link";
 import PageContainer from "@/components/page-container";
 import Display from "@/components/index-components/brand-logo-container";
-import SubForm from "@/components/sub-form";
+import SubForm from "@/components/ui/sub-form";
 import {
   Head,
   Segment,

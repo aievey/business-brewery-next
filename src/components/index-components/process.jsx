@@ -40,7 +40,7 @@ const Process = () => {
   return (
     <Segment>
       <Large>
-        <h1 className="py-4 text-right text-2xl font-semibold tracking-wide text-stone-600">
+        <h1 className="py-4 text-center text-2xl font-semibold tracking-wide text-stone-600">
           A Clear, Collaborative Process
         </h1>
       </Large>

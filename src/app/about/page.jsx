@@ -1,6 +1,6 @@
 import PageContainer from "@/components/page-container";
 import SubCover from "@/components/sub-cover";
-import SubForm from "@/components/sub-form";
+import SubForm from "@/components/ui/sub-form";
 import Image from "next/image";
 import Button from "@/components/ui/button";
 import {

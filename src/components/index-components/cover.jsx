@@ -10,7 +10,7 @@ export default function Cover() {
               <h2 className="py-4 text-4xl/1 font-extrabold md:text-5xl">
                 Business Brewery
               </h2>
-              <p className="text-sm font-extralight">
+              <p className="text-sm font-extralight italic">
                 -ready to take your business to the next level?
               </p>
             </div>

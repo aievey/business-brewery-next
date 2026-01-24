@@ -10,8 +10,8 @@ const Legal = () => {
   return (
     <PageContainer>
       <SubCover url="/terms-cover.jpg">Terms</SubCover>
-      <div className="w-full rounded-2xl border border-stone-700 shadow md:w-8/10">
-        <div className="space-y-4 p-4 text-stone-600 md:px-10">
+      <div className="w-full rounded-2xl border border-stone-200 shadow md:w-8/10">
+        <div className="space-y-4 p-4 text-stone-700 md:px-10">
           <h1 className="text-xl font-bold tracking-wider">
             TERMS AND CONDITIONS.
           </h1>

@@ -29,13 +29,13 @@ const servicesList = [
   },
   {
     id: 3,
-    name: "Fast Loading",
+    name: "Fast Load",
     icon: Timer,
     iconColour: "text-yellow-400",
   },
   {
     id: 4,
-    name: "Scalable",
+    name: "Scale",
     icon: ChartNoAxesCombined,
     iconColour: "text-blue-400",
   },
@@ -51,7 +51,7 @@ const Services = () => {
           {servicesList.map((service) => (
             <div key={service.id} className="my-4 flex items-center">
               <service.icon className={`p-1 ${service.iconColour}`} size={40} />
-              <h3 className="w-full rounded-2xl bg-white/60 px-3 text-lg font-semibold tracking-wide shadow">
+              <h3 className="w-full rounded-2xl bg-white px-3 text-lg font-semibold tracking-wide shadow">
                 {service.name}
               </h3>
 
@@ -65,16 +65,17 @@ const Services = () => {
       </Small>
       <Large>
         <Head>
-          Starting new, looking where to start? Or dealing with clunky software,
-          slow websites?
+          Starting new, looking where to start or dealing with slow websites?
         </Head>
         <Elaboration>
-          We, offer solutions for exactly the same. <br />
+          <b>We offer solutions for exactly the same.</b> <br />
           Scalable, Lightning fast, Discoverable and secure websites build with
-          bleding edge technology to outshine your competition! <br />
-          Growth and performance that is what we deliver.
+          bleeding edge technology to outshine your competition. <br />
+          <p className="py-4 text-amber-400 italic">
+            Growth + performance that is what we deliver!
+          </p>
         </Elaboration>
-        <div className="flex items-center justify-start gap-6 pt-6">
+        <div className="flex items-center justify-start gap-4 pt-6">
           <Button width="w-35" accent>
             Learn more
           </Button>
