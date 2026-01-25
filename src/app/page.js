@@ -58,12 +58,8 @@ export default function Home() {
               <Elaboration>
                 <p>
                   Let&apos;s discuss your project. No obligation, just a
-                  conversation.{" "}
-                  <Link href="/about" className="text-blue-500">
-                    Schedule your free site inspection
-                  </Link>{" "}
-                  or
-                  <Link href="/" className="text-blue-500">
+                  conversation. Schedule your free site inspection or
+                  <Link href="/contact" className="text-blue-500">
                     {" "}
                     let&apos;s start from scratch.
                   </Link>

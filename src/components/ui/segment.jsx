@@ -6,7 +6,7 @@ const Head = ({ children }) => {
   );
 };
 const Elaboration = ({ children }) => {
-  return <div className="text-lg text-stone-600">{children}</div>;
+  return <div className="space-y-4 text-lg text-stone-600">{children}</div>;
 };
 const Small = ({ children }) => {
   return (

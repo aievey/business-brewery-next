@@ -26,7 +26,9 @@ const Footer = () => {
                 <b>Update</b> / <b>Renew</b> or even create from <b>Scratch</b>{" "}
                 your business profile online <b>with us!</b>
               </p>
-              <Button width="w-1/2">Start now</Button>
+              <Link href="/contact">
+                <Button width="w-1/2">Start now</Button>
+              </Link>
             </div>
             {/* Middle */}
             <div className="flex w-full flex-col gap-4 md:w-1/3">

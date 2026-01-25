@@ -13,6 +13,7 @@ import {
   Search,
 } from "lucide-react";
 import Button from "../ui/button";
+import Link from "next/link";
 
 const servicesList = [
   {
@@ -76,10 +77,14 @@ const Services = () => {
           </p>
         </Elaboration>
         <div className="flex items-center justify-start gap-4 pt-6">
-          <Button width="w-35" accent>
-            Learn more
-          </Button>
-          <Button width="w-35">Get started</Button>
+          <Link href="/package">
+            <Button width="w-35" accent>
+              Learn more
+            </Button>
+          </Link>
+          <Link href="/contact">
+            <Button width="w-35">Get started</Button>
+          </Link>
         </div>
       </Large>
     </Segment>

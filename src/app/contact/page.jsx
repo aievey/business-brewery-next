@@ -9,7 +9,7 @@ export const metadata = {
 const Contact = () => {
   return (
     <PageContainer>
-      <SubCover url="/contact-us.jpg">Connect</SubCover> <h1>Contact</h1>
+      <SubCover url="/contact-us.jpg">Connect</SubCover>
       <Form />
     </PageContainer>
   );
