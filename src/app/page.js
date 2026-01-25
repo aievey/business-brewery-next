@@ -44,11 +44,13 @@ export default function Home() {
 
         <Segment>
           <Small>
-            <h2>
+            <Head>
               <b>About me</b>
-            </h2>
+            </Head>
           </Small>
-          <Large>ok</Large>
+          <Large>
+            <Elaboration>ok</Elaboration>
+          </Large>
         </Segment>
 
         <Segment>

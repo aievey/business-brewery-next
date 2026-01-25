@@ -48,6 +48,7 @@ const Form = () => {
               type="text"
               name="lname"
               placeholder="Doe"
+              autoComplete="family-name"
               className="rounded-full bg-amber-100 p-1 px-4"
             />
           </div>
@@ -62,6 +63,7 @@ const Form = () => {
             <input
               required
               className="rounded-full bg-amber-100 p-1 px-4"
+              autoComplete=""
               type="email"
               name="email"
               placeholder="you@example.com"

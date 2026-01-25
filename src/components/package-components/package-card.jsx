@@ -24,7 +24,9 @@ const PackageCard = ({ offer }) => {
           <h3 className="font-semibold">Deliverables</h3>
           <ul className="list-disc">
             {offer.deliverable.map((item) => (
-              <li className="ml-6">{item}</li>
+              <li key={item.id} className="ml-6">
+                {item.content}
+              </li>
             ))}
           </ul>
         </div>
@@ -32,7 +34,9 @@ const PackageCard = ({ offer }) => {
           <h4 className="font-semibold text-rose-400">Does Not Include</h4>
           <ul className="list-disc">
             {offer.nonDeliverable.map((item) => (
-              <li className="ml-6">{item}</li>
+              <li key={item.id} className="ml-6">
+                {item.content}
+              </li>
             ))}
           </ul>
         </div>

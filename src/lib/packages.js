@@ -7,20 +7,61 @@ const packages = [
     priceRange: "$800 - $1,500",
     timeLine: "1-2 Weeks",
     deliverable: [
-      "A clean, modern 3-Page Website (Home, About, Contact) using a premium WordPress theme or a simple HTML/CSS template.",
-      "Customization: You'll customize the theme/template with the client's logo, colors, fonts, and content.",
-      "Contact Form: A simple form that emails them leads.",
-      "Basic Setup: Connect their custom domain, set up hosting (you can use a simple reseller account or guide them).",
-      "1 Round of Revisions on the homepage design before building.",
-      "1 Round of Revisions on the homepage design before building.",
-      "1-Hour Training Session via Zoom on how to log in and update basic text/images.",
+      {
+        id: "p1d1",
+        content:
+          "A clean, modern 3-Page Website (Home, About, Contact) using a premium WordPress theme or a simple HTML/CSS template.",
+      },
+      {
+        id: "p1d2",
+        content:
+          "Customization: You'll customize the theme/template with the client's logo, colors, fonts, and content.",
+      },
+      {
+        id: "p1d3",
+        content: "Contact Form: A simple form that emails them leads.",
+      },
+      {
+        id: "p1d4",
+        content:
+          "Basic Setup: Connect their custom domain, set up hosting (you can use a simple reseller account or guide them).",
+      },
+      {
+        id: "p1d5",
+        content: "1 Round of Revisions on the homepage design before building.",
+      },
+      {
+        id: "p1d6",
+        content: "1 Round of Revisions on the homepage design before building.",
+      },
+      {
+        id: "p1d7",
+        content:
+          "1-Hour Training Session via Zoom on how to log in and update basic text/images.",
+      },
     ],
     nonDeliverable: [
-      "No custom graphics or illustrations (you'll use stock images they provide/license).",
-      "No e-commerce, memberships, or logins.",
-      "No custom functionality beyond the contact form.",
-      "No blog setup (unless it's a one-click theme feature).",
-      "No ongoing updates or content changes after launch.",
+      {
+        id: "p1nd1",
+        content:
+          "No custom graphics or illustrations (you'll use stock images they provide/license).",
+      },
+      {
+        id: "p1nd2",
+        content: "No e-commerce, memberships, or logins.",
+      },
+      {
+        id: "p1nd3",
+        content: "No custom functionality beyond the contact form.",
+      },
+      {
+        id: "p1nd4",
+        content: "No blog setup (unless it's a one-click theme feature).",
+      },
+      {
+        id: "p1nd5",
+        content: "No ongoing updates or content changes after launch.",
+      },
     ],
   },
   {
@@ -31,20 +72,57 @@ const packages = [
     priceRange: "$1,800 - $3,500",
     timeLine: "3-4 Weeks",
     deliverable: [
-      "A more customized Up to 7-Page Website (Home, About, Services, Portfolio/Gallery, Blog, Contact, FAQ) using a flexible page-builder theme (like Astra + Elementor, GeneratePress) or a more advanced template.",
-      "Custom Design within a Framework: You'll do more than just change colors; you'll significantly rearrange layouts and components to match a provided design or your mockup.",
-      "Portfolio/Gallery: A nice-looking display for their work.",
-      "Blog Setup: Categories, initial formatting, and a nice layout.",
-      "Advanced Contact Form: Possibly with fields for service inquiries or file upload.",
-      "Basic Speed Optimization: Image compression, caching plugin setup.",
-      "2 Rounds of Revisions (on homepage and one interior page).",
-      "1.5-Hour Training Session on managing pages, blog posts, and the media library.",
+      {
+        id: "p2d1",
+        content:
+          "A more customized Up to 7-Page Website (Home, About, Services, Portfolio/Gallery, Blog, Contact, FAQ) using a flexible page-builder theme (like Astra + Elementor, GeneratePress) or a more advanced template.",
+      },
+      {
+        id: "p2d2",
+        content:
+          "Custom Design within a Framework: You'll do more than just change colors; you'll significantly rearrange layouts and components to match a provided design or your mockup.",
+      },
+      {
+        id: "p2d3",
+        content: "Portfolio/Gallery: A nice-looking display for their work.",
+      },
+      {
+        id: "p2d4",
+        content:
+          "Blog Setup: Categories, initial formatting, and a nice layout.",
+      },
+      {
+        id: "p2d5",
+        content:
+          "Advanced Contact Form: Possibly with fields for service inquiries or file upload.",
+      },
+      {
+        id: "p2d6",
+        content:
+          "Basic Speed Optimization: Image compression, caching plugin setup.",
+      },
+      {
+        id: "p2d7",
+        content: "2 Rounds of Revisions (on homepage and one interior page).",
+      },
+      {
+        id: "p2d8",
+        content:
+          "1.5-Hour Training Session on managing pages, blog posts, and the media library.",
+      },
     ],
     nonDeliverable: [
-      "No custom-coded features from scratch.",
-      "No complex animations or interactive elements.",
-      "No custom plugin development.",
-      "No e-commerce (but you can install a basic WooCommerce setup as an Add-On - see below).",
+      { id: "p2nd1", content: "No custom-coded features from scratch." },
+      {
+        id: "p2nd2",
+        content: "No complex animations or interactive elements.",
+      },
+      { id: "p2nd3", content: "No custom plugin development." },
+      {
+        id: "p2nd4",
+        content:
+          "No e-commerce (but you can install a basic WooCommerce setup as an Add-On - see below).",
+      },
     ],
   },
   {
@@ -55,17 +133,50 @@ const packages = [
     priceRange: "$1,200 - $2,500",
     timeLine: "2-3 Weeks",
     deliverable: [
-      "One (1) high-conversion, beautifully designed Landing Page with clear sections (Hero, Benefits, Testimonials, CTA, FAQ).",
-      "Optional: 2-3 supporting pages (Privacy Policy, Thank You, Details page) if needed.",
-      "Deep Focus on Conversion: You'll strategically place calls-to-action, build trust elements, and ensure fast loading.",
-      "Email List Integration: Connect a sign-up form to their Mailchimp or ConvertKit account.",
-      "Performance-Optimized: This page will be built with a focus on speed scores (Google PageSpeed Insights).",
-      "2 Rounds of Revisions focused entirely on copy and conversion flow.",
-      "Analytics Setup: Basic Google Analytics/Google Tag Manager installation.",
+      {
+        id: "p3d1",
+        content:
+          "One (1) high-conversion, beautifully designed Landing Page with clear sections (Hero, Benefits, Testimonials, CTA, FAQ).",
+      },
+      {
+        id: "p3d2",
+        content:
+          "Optional: 2-3 supporting pages (Privacy Policy, Thank You, Details page) if needed.",
+      },
+      {
+        id: "p3d3",
+        content:
+          "Deep Focus on Conversion: You'll strategically place calls-to-action, build trust elements, and ensure fast loading.",
+      },
+
+      {
+        id: "p3d4",
+        content:
+          "Email List Integration: Connect a sign-up form to their Mailchimp or ConvertKit account.",
+      },
+      {
+        id: "p3d5",
+        content:
+          "Performance-Optimized: This page will be built with a focus on speed scores (Google PageSpeed Insights).",
+      },
+      {
+        id: "p3d6",
+        content:
+          "2 Rounds of Revisions focused entirely on copy and conversion flow.",
+      },
+      {
+        id: "p3d7",
+        content:
+          "Analytics Setup: Basic Google Analytics/Google Tag Manager installation.",
+      },
     ],
     nonDeliverable: [
-      "This is not a full website. It's a focused, single-purpose digital asset.",
-      "No ongoing blog or content updates.",
+      {
+        id: "p3nd1",
+        content:
+          "This is not a full website. It's a focused, single-purpose digital asset.",
+      },
+      { id: "p3nd2", content: "No ongoing blog or content updates." },
     ],
   },
 ];
