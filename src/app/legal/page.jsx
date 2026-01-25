@@ -235,9 +235,7 @@ const Legal = () => {
           </p>
           <p className="text-blue-500">
             <b>
-              <a href="mailto:amitabh293verma@gmail.com">
-                amitabh293verma@gmail.com
-              </a>
+              <a href="mailto:aievey.av@gmail.com">aievey.av@gmail.com</a>
             </b>
           </p>
           <p>
