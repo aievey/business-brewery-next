@@ -42,7 +42,7 @@ export default function Home() {
         </Segment>
         <Process />
 
-        <Segment>
+        {/* <Segment>
           <Small>
             <Head>
               <b>About me</b>
@@ -51,7 +51,7 @@ export default function Home() {
           <Large>
             <Elaboration>ok</Elaboration>
           </Large>
-        </Segment>
+        </Segment> */}
 
         <Segment>
           <Large>

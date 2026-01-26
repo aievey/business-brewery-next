@@ -10,7 +10,7 @@ const Elaboration = ({ children }) => {
 };
 const Small = ({ children }) => {
   return (
-    <div className="w-full overflow-hidden rounded-2xl bg-black/5 p-4 lg:w-4/10">
+    <div className="flex w-full flex-col justify-center overflow-hidden rounded-2xl bg-black/5 p-4 lg:w-4/10">
       {children}
     </div>
   );
