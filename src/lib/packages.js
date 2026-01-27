@@ -32,10 +32,6 @@ const packages = [
       },
       {
         id: "p1d6",
-        content: "1 Round of Revisions on the homepage design before building.",
-      },
-      {
-        id: "p1d7",
         content:
           "1-Hour Training Session via Zoom on how to log in and update basic text/images.",
       },
