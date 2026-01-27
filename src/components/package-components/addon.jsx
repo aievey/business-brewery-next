@@ -7,7 +7,7 @@ const AddOn = ({ list }) => {
         Add Ons
       </h2>
       <Elaboration>
-        <ul className="list-disc space-y-2 p-4">
+        <ul className="list-decimal space-y-2 p-4">
           {list.map((add) => (
             <li key={add.id}>
               <div className="rounded-2xl p-4 shadow">

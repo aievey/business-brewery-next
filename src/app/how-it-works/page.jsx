@@ -3,6 +3,9 @@ import SubCover from "@/components/sub-cover";
 import { Elaboration, Head } from "@/components/ui/segment";
 import QnA from "@/components/ui/accordion";
 import { processSteps } from "@/lib/process";
+import Button from "@/components/ui/button";
+import Link from "next/link";
+import { Rocket } from "lucide-react";
 
 export const metadata = {
   title: "How it works",
@@ -25,7 +28,7 @@ const Timeline = () => {
               <step.icon />
             </span>
           </div>
-          <div className="-translate-y-1.5 pt-2 pb-8 text-stone-700">
+          <div className="-translate-y-0.5 pt-2 pb-8 text-stone-700">
             <h2 className="text-xl font-semibold">{step.title}</h2>
             <div className="text-lg font-light text-stone-600">
               <p className="mt-2 italic">{step.description}</p>
@@ -57,6 +60,13 @@ const Process = () => {
       </div>
       <Timeline />
       <QnA />
+      <div className="flex h-30 items-center justify-center">
+        <Link href="/contact">
+          <Button width="w-60 flex justify-center gap-2">
+            Let's Get Started <Rocket />
+          </Button>
+        </Link>
+      </div>
     </PageContainer>
   );
 };

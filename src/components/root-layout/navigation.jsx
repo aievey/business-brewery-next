@@ -75,7 +75,7 @@ const Navigation = () => {
                   <div key={item.label} className="relative">
                     <button
                       onClick={() => handleDropdownToggle(item.label)}
-                      className="px-3 py-2 font-bold text-stone-700 hover:cursor-pointer hover:text-amber-600"
+                      className="px-3 py-2 font-bold text-stone-700 hover:cursor-pointer hover:text-amber-400"
                     >
                       {item.label}
                       <span className="ml-1">⌄</span>
@@ -105,7 +105,7 @@ const Navigation = () => {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="px-3 py-2 font-bold text-stone-700 hover:text-amber-600"
+                  className="px-3 py-2 font-bold text-stone-700 hover:text-amber-400"
                 >
                   {item.label}
                 </Link>

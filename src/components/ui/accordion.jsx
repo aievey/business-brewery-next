@@ -15,7 +15,7 @@ const QnA = () => {
         const isOpen = isAccordionOpen === q.id;
 
         return (
-          <div className="mb-4" key={q.id}>
+          <div className="mb-4 text-lg text-stone-600" key={q.id}>
             <button
               className={`w-full rounded-lg transition-colors duration-200 ${isOpen ? "bg-white" : "bg-amber-50"} p-2 text-left shadow hover:cursor-pointer`}
               onClick={() => handleAccrodion(q.id)}
@@ -26,7 +26,7 @@ const QnA = () => {
               </div>
             </button>
             <div
-              className={`overflow-hidden border-l-3 border-stone-600 bg-amber-100 px-2 transition-all duration-200 ${isOpen ? "mt-2 " : "h-0"}`}
+              className={`overflow-hidden rounded-r-lg border-l-3 border-stone-600 bg-amber-100 px-2 transition-all duration-200 ${isOpen ? "mt-2 " : "h-0"}`}
             >
               {q.a}
             </div>

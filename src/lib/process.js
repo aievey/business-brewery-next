@@ -1,4 +1,5 @@
 import { Headset, PencilLine, CodeXml, ScanSearch, Rocket } from "lucide-react";
+import Link from "next/link";
 
 const processSteps = [
   {
@@ -116,7 +117,7 @@ const faqs = [
   {
     id: "faq4",
     q: "What happens after launch?",
-    a: "All projects include 1 month(s) of post-launch support for minor fixes. For ongoing updates, we offer flexible retainer plans.",
+    a: `All projects include 1 month(s) of post-launch support for minor fixes. For ongoing updates, we offer flexible retainer plans.`,
   },
 ];
 
