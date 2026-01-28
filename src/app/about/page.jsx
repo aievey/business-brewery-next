@@ -3,6 +3,7 @@ import SubCover from "@/components/sub-cover";
 import SubForm from "@/components/ui/sub-form";
 import Image from "next/image";
 import Button from "@/components/ui/button";
+import People from "@/components/carousel";
 import {
   Segment,
   Large,
@@ -68,14 +69,8 @@ const About = () => {
         <Large>
           <Head>The Minds Behind the Work</Head>
 
-          <div className="border border-red-500">
-            <b>Member component required!</b> <br />
-            A professional but approachable headshot.
-            <br />
-            Name & Title. Brief Bio: Focus on expertise, passion, and how they
-            help clients. Include a fun, humanizing fact e.g., <br />
-            Coffee enthusiast, mountain biker, and detail-obsessed
-            problem-solver.
+          <div className="">
+            <People />
           </div>
         </Large>
         <Small>

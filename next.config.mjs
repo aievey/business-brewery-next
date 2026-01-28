@@ -8,10 +8,10 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "cdn.worldvectorlogo.com/",
-        port: "",
         pathname: "/logos/**",
-        search: "",
       },
+
+      { protocol: "https", hostname: "robohash.org" },
     ],
   },
 };

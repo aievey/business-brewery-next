@@ -45,8 +45,8 @@ const process = [
 ];
 const Process = () => {
   return (
-    <div className="flex w-full items-center justify-center rounded-2xl bg-linear-to-b from-amber-100 to-amber-300 pb-6 md:bg-none md:py-20 md:shadow">
-      <div className="flex flex-wrap justify-center gap-4 md:max-w-2/3 md:flex-nowrap md:gap-10">
+    <div className="flex w-full items-center justify-center rounded-2xl bg-linear-to-b from-amber-100 to-amber-300 duration-200 md:shadow xl:py-20">
+      <div className="flex flex-wrap justify-center gap-4 xl:gap-10">
         <div className="flex flex-col space-y-4 py-5">
           {process.map((step) => (
             <div key={step.id} className="flex items-center justify-center">
@@ -66,7 +66,7 @@ const Process = () => {
           ))}
         </div>
 
-        <div className="p-4">
+        <div className="max-w-100 p-4">
           <Head className="py-4 text-center text-2xl font-semibold tracking-wide text-stone-600">
             A Clear, Collaborative Process
           </Head>
