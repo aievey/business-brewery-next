@@ -3,7 +3,7 @@ import SubCover from "@/components/sub-cover";
 import SubForm from "@/components/ui/sub-form";
 import Image from "next/image";
 import Button from "@/components/ui/button";
-import People from "@/components/carousel";
+import People from "@/components/members";
 import {
   Segment,
   Large,
@@ -12,54 +12,61 @@ import {
   Elaboration,
 } from "@/components/ui/segment";
 
+const howWeWork = [
+  {
+    id: 1,
+    title: "Partnership Over Transaction.",
+    description: "We see ourselves as an extension of your team.",
+  },
+  {
+    id: 2,
+    title: "Clarity & Communication.",
+    description: "No jargon, just clear updates and honest timelines.",
+  },
+  {
+    id: 3,
+    title: "Future-Proof Solutions.",
+    description: "We build for tomorrow, not just for today.",
+  },
+  {
+    id: 4,
+    title: "Quality in the Details.",
+    description: "From code to customer experience, we sweat the small stuff.",
+  },
+];
+
 export const metadata = {
   title: "About us",
   description: "Who are we? What we do? Know about us.",
 };
 const About = () => {
-  const newLocal = "rounded-2xl bg-amber-400 p-4 shadow";
+  const newLocal = "rounded-2xl bg-amber-200 p-4 shadow";
   return (
     <PageContainer>
       <SubCover url="/about-us-cover.jpg">About us</SubCover>
 
       <Segment>
         <Small>
-          <Head>
-            More Than Code: Building Partnerships for Digital Success.
-          </Head>
-          <Elaboration>
-            We&apos;re a team of strategists and developers passionate about
-            turning your business challenges into powerful web solutions.
-          </Elaboration>
+          <div className="md:p-10">
+            <Head>
+              More Than Code: Building Partnerships for Digital Success.
+            </Head>
+            <Elaboration>
+              We&apos;re a team of strategists and developers passionate about
+              turning your business challenges into powerful web solutions.
+            </Elaboration>
+          </div>
         </Small>
         <Large>
           <Head>How we work</Head>
           <Elaboration>
             <ul className="space-y-4">
-              <li className={newLocal}>
-                <b>Partnership Over Transaction.</b> <br />
-                <span className="italic">
-                  We see ourselves as an extension of your team.
-                </span>
-              </li>
-              <li className="rounded-2xl bg-amber-400 p-4 shadow">
-                <b>Clarity & Communication.</b> <br />
-                <span className="italic">
-                  No jargon, just clear updates and honest timelines.
-                </span>
-              </li>
-              <li className="rounded-2xl bg-amber-400 p-4 shadow">
-                <b>Future-Proof Solutions.</b> <br />
-                <span className="italic">
-                  We build for tomorrow, not just for today.
-                </span>
-              </li>
-              <li className="rounded-2xl bg-amber-400 p-4 shadow">
-                <b>Quality in the Details.</b> <br />
-                <span className="italic">
-                  From code to customer experience, we sweat the small stuff.
-                </span>
-              </li>
+              {howWeWork.map((point) => (
+                <li key={point.id} className={newLocal}>
+                  <b>{point.title}</b> <br />
+                  <span className="italic">{point.description}</span>
+                </li>
+              ))}
             </ul>
           </Elaboration>
         </Large>
@@ -69,17 +76,18 @@ const About = () => {
         <Large>
           <Head>The Minds Behind the Work</Head>
 
-          <div className="">
-            <People />
-          </div>
+          <People />
         </Large>
         <Small>
-          <Head>What makes us different?</Head>
-          <Elaboration>
-            We Focus on Your Business Goals, not just technical specs.
-            <br /> You Work Directly With the Experts, not an account manager.{" "}
-            <br /> We Champion Your Ongoing Success with clear support options.
-          </Elaboration>
+          <div className="md:p-10">
+            <Head>What makes us different?</Head>
+            <Elaboration>
+              We Focus on Your Business Goals, not just technical specs.
+              <br /> You Work Directly With the Experts, not an account manager.{" "}
+              <br /> We Champion Your Ongoing Success with clear support
+              options.
+            </Elaboration>
+          </div>
         </Small>
       </Segment>
 

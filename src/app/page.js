@@ -58,7 +58,7 @@ export default function Home() {
             <div className="flex h-full flex-col items-center justify-center">
               <Head>Ready to Build Your Solution?</Head>
               <Elaboration>
-                <p>
+                <p className="max-w-85">
                   Let&apos;s discuss your project. No obligation, just a
                   conversation. Schedule your free site inspection or
                   <Link href="/contact" className="text-blue-500">

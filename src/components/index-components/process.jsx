@@ -52,7 +52,7 @@ const Process = () => {
             <div key={step.id} className="flex items-center justify-center">
               <step.icon
                 size={52}
-                className={`mr-5 rounded-xl bg-stone-100 p-1 shadow ${step.color}`}
+                className={`mr-5 rounded-xl bg-stone-100 p-2 shadow ${step.color}`}
               />
               <div className="min-w-50 rounded-xl bg-stone-100 px-4 py-0.5 shadow">
                 <h3 className="text-lg font-semibold tracking-wide text-stone-700">

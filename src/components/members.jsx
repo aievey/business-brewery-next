@@ -13,12 +13,14 @@ import { useState } from "react";
 const Card = ({ img }) => {
   return (
     <div className="h-full min-w-60 snap-center overflow-hidden rounded-2xl shadow duration-200">
-      <div className="to relative h-40 rounded-b-2xl bg-amber-100 bg-linear-to-t from-white shadow">
+      <div className="to relative h-40 w-full rounded-b-2xl bg-amber-100 bg-linear-to-t from-white shadow">
         <Image
           src={`https://robohash.org/${img}?set=set4`}
           fill
+          loading="lazy"
           className="object-contain"
           alt="profile"
+          sizes="120px"
         />
       </div>
       <div className="p-4 text-stone-600">
@@ -42,7 +44,11 @@ const People = () => {
       <Card img="SL0" />
       <Card img="SLO" />
       <Card img="BKW" />
-      <Card img="S82" />
+      <Card img="SGG" />
+      {/* <Card img="cool" />
+      <Card img="philip" />
+      <Card img="HAN" />
+      <Card img="DEV" /> */}
     </div>
   );
 };
