@@ -32,6 +32,7 @@ const mainForm = [
         id: "Timeline",
         name: "timeline",
         type: "radio",
+        required: true,
         options: [
           {
             id: "tr1",
@@ -55,6 +56,7 @@ const mainForm = [
         id: "Budget",
         name: "budget",
         type: "radio",
+        required: true,
         options: [
           {
             id: "br1",

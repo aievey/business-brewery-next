@@ -70,7 +70,7 @@ const Form = () => {
                           name={categories.name}
                           value={option.value}
                           id={option.id}
-                          required
+                          required={categories.required ? true : false}
                         />
                         <label htmlFor={option.id}>{option.value}</label>
                       </div>

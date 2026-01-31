@@ -91,23 +91,23 @@ const About = () => {
         </Small>
       </Segment>
 
-      <div className="border border-red-500">
+      {/* <div className="border border-red-500">
         {" "}
         <b>component required</b> <br />
         Testimonials
-      </div>
+      </div> */}
       <Segment>
-        <Large>
-          <div className="flex h-full w-full flex-col items-center justify-center">
-            <Head>Have a project in mind?</Head>
-            <Elaboration>
-              Let&apos;s combine your vision with our expertise
-            </Elaboration>
+        <div className="flex h-full w-full flex-col items-center justify-center py-20">
+          <Head>Have a project in mind?</Head>
+          <Elaboration>
+            Let&apos;s combine your vision with our expertise
+          </Elaboration>
+          <div className="flex h-30 items-center justify-center">
+            <Button type="submit" width="w-60">
+              Get My Free Quote & Plan
+            </Button>
           </div>
-        </Large>
-        <Small>
-          <SubForm />
-        </Small>
+        </div>
       </Segment>
     </PageContainer>
   );
