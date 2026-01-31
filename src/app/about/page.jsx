@@ -11,6 +11,7 @@ import {
   Head,
   Elaboration,
 } from "@/components/ui/segment";
+import Link from "next/link";
 
 const howWeWork = [
   {
@@ -103,9 +104,11 @@ const About = () => {
             Let&apos;s combine your vision with our expertise
           </Elaboration>
           <div className="flex h-30 items-center justify-center">
-            <Button type="submit" width="w-60">
-              Get My Free Quote & Plan
-            </Button>
+            <Link href="/contact">
+              <Button type="submit" width="w-60">
+                Get My Free Quote & Plan
+              </Button>
+            </Link>
           </div>
         </div>
       </Segment>
